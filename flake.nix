@@ -1,0 +1,34 @@
+{
+  description = "NixOS Atlas System";
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    flake-utils.url = "github:numtide/flake-utils";
+  };
+
+  outputs = { self, nixpkgs, flake-utils, ... }:
+    let
+      eachSystem = flake-utils.lib.eachDefaultSystem (system:
+        let
+          pkgs = import nixpkgs {
+            inherit system;
+            config.allowUnfree = true;
+          };
+        in {
+          packages.default = pkgs.hello;
+        });
+    in
+      eachSystem // {
+        nixosConfigurations.atlas = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./hosts/atlas.nix
+            ./modules/audio.nix
+            ./modules/hyprland.nix
+            ./modules/networking.nix
+            ./modules/shadowsocks.nix
+            ./user/atlas.nix
+          ];
+        };
+      };
+}
