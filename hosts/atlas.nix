@@ -41,7 +41,7 @@ name = "supermacy.db";
 
 environment.systemPackages = with pkgs; [
 wget
-alacritty
+kitty
 rofi
 bspwm
 sxhkd
