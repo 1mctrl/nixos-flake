@@ -8,6 +8,7 @@
   config = {
     services.xserver.enable = true;
     services.xserver.windowManager.bspwm.enable = true;
+    services.ly.enable = true;
 
     environment.systemPackages = with pkgs; [
       bspwm
@@ -20,6 +21,6 @@
     ];
 
     
-    services.xserver.displayManager.startx.enable = true;  # если без GUI дисплей-менеджера
+    services.xserver.displayManager.startx.enable = true;  
   };
 }
