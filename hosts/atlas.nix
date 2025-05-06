@@ -1,10 +1,10 @@
-{ config, pkgs, ... };
+{ config, pkgs, ... }:
 
 {
 imports = [
   ./hardware-configuration.nix   
    ];
-];
+
 
 boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -20,11 +20,9 @@ fontconfig.enable = true;
 
 nixpkgs.config.allowUnfree = true;
 
-environment.ShellAliases = {
+environment.shellAliases = {
 update = "sudo nixos-rebuild switch";
 nix-config = "sudo nano /etc/nixos/flake.nix";
-hypr-conf = "nano ~/.config/hypr/hyprland.conf";
-waybar-config = "nano ~/.config/waybar/config";
 waybar-style = "nano ~/.config/waybar/styles.css";
 rebuild-boot = "sudo nixos-rebuild boot";
 clean-garbage = "sudo nix-collect-garbage -d";
@@ -32,50 +30,52 @@ clean-generations = "sudo nix-env --profile /nix/var/nix/profiles/system --delet
 my-vps = "ssh debian@162.19.247.71";
 };
 
-services.mysql = {
-enable = true;
-package = pkgs.mariadb;
-initialDatabase = [{
-name = "supermacy.db"; }];
-};
+services.mysql.enable = true;
+     services.mysql.package = pkgs.mariadb;
+
+services.mysql.initialDatabases = [
+{
+name = "supermacy.db";
+}
+];
 
 environment.systemPackages = with pkgs; [
- wget
- alacritty
- rofi
- dunst
- librewolf 
- proxychains
- bibata-cursors
-(nerdfonts.override { fonts = [ "FiraCode" ]; })
- git
- fastfetch
- tree
- osu-lazer
- rustc
- cargo
- hyprshot
- dolphin
- mako 
- mariadb
- shadowsocks-libev
- qt5.qtwayland
- qt6.qtwayland 
- wl-clipboard
- gcc
- dbeaver-bin 
- jdk17
- cryptsetup 
- xdg-dekstop-portal
- xdg-desktop-portal-wlr
- networkmanager
- clang 
- llvm
- networkmanager-dmenu 
- xdg-desktop-portal-hyprland
- waybar
- swaybg
- wofi
+wget
+alacritty
+rofi
+dunst
+librewolf
+proxychains
+bibata-cursors
+(nerdfonts.override {fonts = [ "FiraCode"];})
+git
+fastfetch
+tree
+osu-lazer
+rustc
+cargo
+hyprshot
+dolphin
+mako
+mariadb
+shadowsocks-libev
+qt5.qtwayland
+qt6.qtwayland
+wl-clipboard
+gcc
+dbeaver-bin
+jdk17
+cryptsetup
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+networkmanager
+clang
+llvm
+networkmanager_dmenu
+xdg-desktop-portal-hyprland
+polkit_gnome
+swaybg
+wofi
 ];
 
 system.stateVersion = "24.11";

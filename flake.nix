@@ -23,11 +23,11 @@
           system = "x86_64-linux";
           modules = [
             ./hosts/atlas.nix
+            ./modules/bspwm.nix
             ./modules/audio.nix
-            ./modules/hyprland.nix
             ./modules/networking.nix
             ./modules/shadowsocks.nix
-            ./user/atlas.nix
+            ./users/atlas.nix
           ];
         };
       };

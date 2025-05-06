@@ -1,4 +1,4 @@
-{ config, pkgs, ... };
+{ config, pkgs, ... }:
 
 {
 environment.etc."shadowsocks/ss-local.json".text = ''
@@ -13,7 +13,13 @@ environment.etc."shadowsocks/ss-local.json".text = ''
 }
 '';
 
-environment.services.sslocal = {
+environment.etc."proxychains.conf".text = ''
+       strict_chain
+       # localnet 127.0.0.0/255.0.0.0
+       socks5 127.0.0.1 1080
+  '';
+
+systemd.services.ss-local = {
 description = "Shadowsocks Local Client";
 wantedBy = [ "multi-user.target" ];
 after = [ "network.target" ];

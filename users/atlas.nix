@@ -1,14 +1,16 @@
-{ config, pkgs, ... };
+{ config, pkgs, ... }:
+
 
 {
 users.users.atlas = {
 isNormalUser = true;
 description = "atlas";
 extraGroups = [ "networkmaneger" "wheel" ];
-shell = pkg.fish;
+shell = pkgs.fish;
 packages = with pkgs; [ 
  alacritty
  librewolf
+ bspwm
  wofi 
  spotify 
  htop
@@ -21,7 +23,6 @@ packages = with pkgs; [
  waybar
  nsxiv
  mariadb
- hyprland
  dbus
  cava
  dolphin
@@ -34,7 +35,7 @@ packages = with pkgs; [
  llvm
  brightnessctl
  pavucontrol
- networkmanager_aplet
+ networkmanagerapplet
  networkmanager_dmenu
  qt5.qtwayland
  qt6.qtwayland 
