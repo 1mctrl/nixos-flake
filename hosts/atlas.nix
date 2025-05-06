@@ -45,6 +45,7 @@ alacritty
 rofi
 bspwm
 sxhkd
+flameshot
 polybar
 picom
 dunst
