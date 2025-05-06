@@ -43,6 +43,10 @@ environment.systemPackages = with pkgs; [
 wget
 alacritty
 rofi
+bspwm
+sxhkd
+polybar
+picom
 dunst
 librewolf
 proxychains
@@ -54,7 +58,6 @@ tree
 osu-lazer
 rustc
 cargo
-hyprshot
 dolphin
 mako
 mariadb
