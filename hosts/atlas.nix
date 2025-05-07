@@ -48,6 +48,7 @@ sxhkd
 flameshot
 polybar
 picom
+feh
 dunst
 librewolf
 proxychains
