@@ -57,7 +57,6 @@ bibata-cursors
 git
 fastfetch
 tree
-osu-lazer
 rustc
 cargo
 dolphin
@@ -76,6 +75,8 @@ xdg-desktop-portal-wlr
 networkmanager
 clang
 llvm
+emacs
+emacs-nox
 networkmanager_dmenu
 xdg-desktop-portal-hyprland
 polkit_gnome
