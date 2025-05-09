@@ -41,6 +41,8 @@ name = "supermacy.db";
 
 environment.systemPackages = with pkgs; [
 wget
+pkgs.pulsemixer
+pkgs.pamixer
 kitty
 rofi
 xorg.xev
