@@ -43,6 +43,7 @@ environment.systemPackages = with pkgs; [
 wget
 kitty
 rofi
+xorg.xev
 bspwm
 sxhkd
 flameshot
