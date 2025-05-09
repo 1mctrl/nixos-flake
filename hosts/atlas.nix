@@ -40,6 +40,7 @@ name = "supermacy.db";
 ];
 
 environment.systemPackages = with pkgs; [
+pkgs.xorg.setxkbmap
 wget
 pkgs.pulsemixer
 pkgs.pamixer
