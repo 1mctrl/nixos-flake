@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
  
 {
-networking.hostName = "atlas";
+networking.hostName = "supermacy"
 networking.networkmanager.enable = true;
 services.openssh.enable = true;
 
