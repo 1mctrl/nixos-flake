@@ -42,7 +42,7 @@ name = "supermacy.db";
 environment.systemPackages = with pkgs; [
 pkgs.xorg.setxkbmap
 wget
-nvim
+neovim
 pkgs.pulsemixer
 pkgs.pamixer
 kitty
