@@ -1,5 +1,5 @@
 {
-  description = "NixOS Atlas System";
+  description = "NixOS Supermacy System";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
@@ -19,7 +19,7 @@
         });
     in
       eachSystem // {
-        nixosConfigurations.atlas = nixpkgs.lib.nixosSystem {
+        nixosConfigurations.supermacy = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
             ./hosts/atlas.nix
