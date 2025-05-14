@@ -40,53 +40,53 @@ name = "supermacy.db";
 ];
 
 environment.systemPackages = with pkgs; [
-pkgs.xorg.setxkbmap
-wget
-neovim
-pkgs.pulsemixer
-pkgs.pamixer
-kitty
-rofi
-xorg.xev
-bspwm
-sxhkd
-flameshot
-polybar
-picom
-feh
-dunst
-librewolf
-proxychains
-bibata-cursors
-(nerdfonts.override {fonts = [ "FiraCode"];})
-git
-fastfetch
-tree
-rustc
-cargo
-dolphin
-mako
-mariadb
-shadowsocks-libev
-qt5.qtwayland
-qt6.qtwayland
-wl-clipboard
-gcc
-dbeaver-bin
-jdk17
-cryptsetup
-xdg-desktop-portal
-xdg-desktop-portal-wlr
-networkmanager
-clang
-llvm
-emacs
-emacs-nox
-networkmanager_dmenu
-xdg-desktop-portal-hyprland
-polkit_gnome
-swaybg
-wofi
+	pkgs.xorg.setxkbmap
+	wget
+	neovim
+	pkgs.pulsemixer
+	pkgs.pamixer
+	kitty
+	rofi
+	xorg.xev
+	bspwm
+	sxhkd
+	flameshot
+	polybar
+	picom
+	feh
+	dunst
+	librewolf
+	proxychains
+	bibata-cursors
+	(nerdfonts.override {fonts = [ "FiraCode"];})
+	git
+	fastfetch
+	tree
+	rustc
+	cargo
+	dolphin
+	mako
+	mariadb
+	shadowsocks-libev
+	qt5.qtwayland
+	qt6.qtwayland
+	wl-clipboard
+	gcc
+	dbeaver-bin
+	jdk17
+	cryptsetup
+	xdg-desktop-portal
+	xdg-desktop-portal-wlr
+	networkmanager
+	clang
+	llvm
+	emacs
+	emacs-nox
+	networkmanager_dmenu
+	xdg-desktop-portal-hyprland
+	polkit_gnome
+	swaybg
+	wofi
 ];
 
 system.stateVersion = "24.11";

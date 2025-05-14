@@ -8,37 +8,36 @@ description = "luna";
 extraGroups = [ "networkmaneger" "wheel" ];
 shell = pkgs.fish;
 packages = with pkgs; [ 
- alacritty
- librewolf
- bspwm
- wofi 
- spotify 
- htop
- telegram-desktop 
- libreoffice 
- cmake
- freecad
- blender
- vscode
- waybar
- nsxiv
- mariadb
- dbus
- cava
- dolphin
- swww
- xdg-desktop-portal
- xdg-desktop-portal-hyprland
- dunst
- gtk3
- clang 
- llvm
- brightnessctl
- pavucontrol
- networkmanagerapplet
- networkmanager_dmenu
- qt5.qtwayland
- qt6.qtwayland 
+ 	librewolf
+ 	bspwm
+ 	wofi 
+	spotify 
+ 	htop
+ 	telegram-desktop 
+ 	libreoffice 
+ 	cmake
+ 	freecad
+ 	blender
+ 	vscode
+ 	waybar
+	nsxiv
+ 	mariadb
+ 	dbus
+ 	cava
+ 	dolphin
+ 	swww
+	xdg-desktop-portal
+ 	xdg-desktop-portal-hyprland
+ 	dunst
+ 	gtk3
+ 	clang 
+ 	llvm
+ 	brightnessctl
+	pavucontrol
+ 	networkmanagerapplet
+ 	networkmanager_dmenu
+ 	qt5.qtwayland
+ 	qt6.qtwayland 
  ];
 };
 
