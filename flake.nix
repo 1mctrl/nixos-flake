@@ -22,12 +22,13 @@
         nixosConfigurations.supermacy = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            ./hosts/atlas.nix
-            ./modules/bspwm.nix
-            ./modules/audio.nix
-            ./modules/networking.nix
-            ./modules/shadowsocks.nix
-            ./users/atlas.nix
+		./hosts/atlas.nix
+		./modules/bspwm.nix
+		./modules/audio.nix
+		./modules/networking.nix
+		./modules/shadowsocks.nix
+		./modules/mysql.nix
+		./users/atlas.nix
           ];
         };
       };

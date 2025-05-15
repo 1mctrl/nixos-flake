@@ -30,14 +30,6 @@ clean-generations = "sudo nix-env --profile /nix/var/nix/profiles/system --delet
 my-vps = "ssh debian@162.19.247.71";
 };
 
-services.mysql.enable = true;
-     services.mysql.package = pkgs.mariadb;
-
-services.mysql.initialDatabases = [
-{
-name = "supermacy.db";
-}
-];
 
 environment.systemPackages = with pkgs; [
 	pkgs.xorg.setxkbmap
