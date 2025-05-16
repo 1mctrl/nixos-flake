@@ -27,7 +27,7 @@ waybar-style = "nano ~/.config/waybar/styles.css";
 rebuild-boot = "sudo nixos-rebuild boot";
 clean-garbage = "sudo nix-collect-garbage -d";
 clean-generations = "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations +3";
-my-vps = "ssh debian@162.19.247.71";
+#my-vps = "ssh debian@162.19.247.71";
 };
 
 
