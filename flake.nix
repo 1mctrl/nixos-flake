@@ -26,7 +26,6 @@
 		./modules/bspwm.nix
 		./modules/audio.nix
 		./modules/networking.nix
-		./modules/shadowsocks.nix
 		./modules/mysql.nix
 		./users/atlas.nix
           ];
