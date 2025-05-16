@@ -31,6 +31,9 @@ my-vps = "ssh debian@162.19.247.71";
 };
 
 
+services.mysql.enable = true;
+
+
 environment.systemPackages = with pkgs; [
 	pkgs.xorg.setxkbmap
 	wget
