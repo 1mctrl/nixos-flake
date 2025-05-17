@@ -79,7 +79,7 @@ environment.systemPackages = with pkgs; [
 	emacs-nox
 	networkmanager_dmenu
 	xdg-desktop-portal-hyprland
-	polkit_gnome
+	#polkit_gnome
 	swaybg
 	wofi
 ];
