@@ -4,7 +4,7 @@
 {
 users.users.atlas = {
 isNormalUser = true;
-description = "luna";
+description = "atlas";
 extraGroups = [ "networkmaneger" "wheel" ];
 shell = pkgs.fish;
 packages = with pkgs; [ 
