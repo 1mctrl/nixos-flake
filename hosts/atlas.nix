@@ -8,7 +8,7 @@ imports = [
 
 boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-    boot.initrd.luks.devices."luks-054b7665-013f-4eba-b094-be307a8f454f".device = "/dev/disk/by-uuid/054b7665-013f-4eba-b094-be307a8f454f";
+    
 
 time.timeZone = "Asia/Tashkent";
 i18n.defaultLocale = "en_US.UTF-8";
