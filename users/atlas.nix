@@ -10,7 +10,7 @@ shell = pkgs.fish;
 packages = with pkgs; [ 
  	librewolf
  	bspwm
- 	wofi 
+ 	 
 	spotify 
  	htop
  	telegram-desktop 
@@ -25,17 +25,14 @@ packages = with pkgs; [
  	dolphin
  	swww
 	xdg-desktop-portal
- 	xdg-desktop-portal-hyprland
- 	dunst
- 	gtk3
+
  	clang 
- 	llvm
+ 	
  	brightnessctl
 	pavucontrol
  	networkmanagerapplet
  	networkmanager_dmenu
- 	qt5.qtwayland
- 	qt6.qtwayland 
+ 
  ];
 };
 
