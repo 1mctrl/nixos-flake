@@ -21,13 +21,10 @@ fontconfig.enable = true;
 nixpkgs.config.allowUnfree = true;
 
 environment.shellAliases = {
-update = "sudo nixos-rebuild switch";
-nix-config = "sudo nano /etc/nixos/flake.nix";
-waybar-style = "nano ~/.config/waybar/styles.css";
+update = "sudo nixos-rebuild switch --flake /etc/nixos#supermacy";
 rebuild-boot = "sudo nixos-rebuild boot";
 clean-garbage = "sudo nix-collect-garbage -d";
 clean-generations = "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations +3";
-#my-vps = "ssh debian@162.19.247.71";
 };
 
 
@@ -60,28 +57,19 @@ environment.systemPackages = with pkgs; [
 	rustc
 	cargo
 	dolphin
-	mako
 	mariadb
 	shadowsocks-libev
-	qt5.qtwayland
-	qt6.qtwayland
-	wl-clipboard
 	gcc
 	dbeaver-bin
 	jdk17
 	cryptsetup
 	xdg-desktop-portal
-	xdg-desktop-portal-wlr
 	networkmanager
 	clang
-	llvm
 	emacs
 	emacs-nox
 	networkmanager_dmenu
-	xdg-desktop-portal-hyprland
-	#polkit_gnome
-	swaybg
-	wofi
+	
 ];
 
 system.stateVersion = "24.11";
