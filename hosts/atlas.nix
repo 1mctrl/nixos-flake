@@ -6,7 +6,7 @@ imports = [
    ];
 
 
-boot.loader.systemd-boot.enable = true;
+boot.loader.systemd-boot.enable = false;
   boot.loader.efi.canTouchEfiVariables = true;
     
 
@@ -26,7 +26,7 @@ rebuild-boot = "sudo nixos-rebuild boot";
 clean-garbage = "sudo nix-collect-garbage -d";
 clean-generations = "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations +3";
 };
-boot.loader.systemd-boot.enable = true;
+#
 boot.loder.grub.enable = true;
 boot.loader.grub.efiSupport = true;
 boot.loader.grub.device = "nodev"; 
