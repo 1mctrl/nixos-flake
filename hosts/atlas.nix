@@ -27,7 +27,7 @@ clean-garbage = "sudo nix-collect-garbage -d";
 clean-generations = "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations +3";
 };
 #
-boot.loder.grub.enable = true;
+boot.loader.grub.enable = true;
 boot.loader.grub.efiSupport = true;
 boot.loader.grub.device = "nodev"; 
 
