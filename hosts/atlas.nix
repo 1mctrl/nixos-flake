@@ -28,8 +28,8 @@ clean-generations = "sudo nix-env --profile /nix/var/nix/profiles/system --delet
 };
 #
 boot.loader.grub.enable = true;
-boot.loader.grub.efiSupport = true;
-boot.loader.grub.device = "nodev"; 
+boot.loader.grub.efiSupport = false;
+boot.loader.grub.device = "/dev/nvme0n1"; 
 
 services.mysql.enable = true;
 services.mysql.package = pkgs.mysql80;
