@@ -38,6 +38,7 @@ environment.systemPackages = with pkgs; [
 	pkgs.xorg.setxkbmap
 	wget
 	neovim
+	btop
 	pkgs.pulsemixer
 	pkgs.pamixer
 	kitty

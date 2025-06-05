@@ -14,10 +14,10 @@ packages = with pkgs; [
 	spotify 
  	htop
  	telegram-desktop 
- #	libreoffice 
+	libreoffice 
  	cmake
- 	#freecad
- #	blender
+ 	freecad
+	blender
 	nsxiv
  	mariadb
  	dbus
