@@ -34,9 +34,12 @@ boot.loader.grub.device = "/dev/nvme0n1";
 services.mysql.enable = true;
 services.mysql.package = pkgs.mysql80;
 
+services.fprintd.enable = true;
+
 environment.systemPackages = with pkgs; [
 	pkgs.xorg.setxkbmap
 	wget
+	fprintd
 	neovim
 	btop
 	pkgs.pulsemixer
