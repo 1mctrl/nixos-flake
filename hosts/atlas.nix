@@ -37,6 +37,7 @@ services.mysql.package = pkgs.mysql80;
 services.fprintd.enable = true;
 
 environment.systemPackages = with pkgs; [
+	lsusb
 	pkgs.xorg.setxkbmap
 	wget
 	fprintd
