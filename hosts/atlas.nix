@@ -36,7 +36,7 @@ services.mysql.package = pkgs.mysql80;
 
 zramSwap = {
 enable = true;
-memonryPercent = 50; }
+memonryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
 	pkgs.xorg.setxkbmap
