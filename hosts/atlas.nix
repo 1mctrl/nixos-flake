@@ -20,13 +20,21 @@ fontconfig.enable = true;
 
 nixpkgs.config.allowUnfree = true;
 
+{
+  nix.settings = {
+    substituters = [ "https://cache.nixos.org" ];
+    trusted-public-keys = [ "cache.nixos.org-1:LfQJbNa3Y2Sb+w6G8H9hTf6LgNfK3RM7um6KFB2z3nM=" ];
+  };
+}
+
+
 environment.shellAliases = {
 update = "sudo nixos-rebuild switch --flake /etc/nixos#supermacy";
 rebuild-boot = "sudo nixos-rebuild boot";
 clean-garbage = "sudo nix-collect-garbage -d";
 clean-generations = "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations +3";
 };
-#
+
 boot.loader.grub.enable = true;
 boot.loader.grub.efiSupport = false;
 boot.loader.grub.device = "/dev/nvme0n1"; 
