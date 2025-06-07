@@ -34,10 +34,11 @@ boot.loader.grub.device = "/dev/nvme0n1";
 services.mysql.enable = true;
 services.mysql.package = pkgs.mysql80;
 
-services.fprintd.enable = true;
+zramSwap = {
+enable = true;
+memonryPercent = 50; }
 
 environment.systemPackages = with pkgs; [
-	lsusb
 	pkgs.xorg.setxkbmap
 	wget
 	fprintd
