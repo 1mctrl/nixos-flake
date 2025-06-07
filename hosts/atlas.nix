@@ -20,12 +20,12 @@ fontconfig.enable = true;
 
 nixpkgs.config.allowUnfree = true;
 
-{
+
   nix.settings = {
     substituters = [ "https://cache.nixos.org" ];
     trusted-public-keys = [ "cache.nixos.org-1:LfQJbNa3Y2Sb+w6G8H9hTf6LgNfK3RM7um6KFB2z3nM=" ];
   };
-}
+
 
 
 environment.shellAliases = {
