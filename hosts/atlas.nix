@@ -26,16 +26,16 @@ nixpkgs.config.allowUnfree = true;
     trusted-public-keys = [ "cache.nixos.org-1:LfQJbNa3Y2Sb+w6G8H9hTf6LgNfK3RM7um6KFB2z3nM=" ];
   };
 
-
-
+{
   services.xserver = {
+    enable = true;
+    layout = null; # убираем, чтобы не конфликтовало
     xkb = {
       layout = "us,ru";
       options = "grp:alt_shift_toggle";
     };
   };
-
-
+}
 
 
 environment.shellAliases = {
