@@ -27,6 +27,14 @@ nixpkgs.config.allowUnfree = true;
   };
 
 
+{
+  services.xserver = {
+    layout = "us,ru"; 
+  xkbOptions = "grp:alt_shift_toggle"; 
+  };
+}
+
+
 
 environment.shellAliases = {
 update = "sudo nixos-rebuild switch --flake /etc/nixos#supermacy";
