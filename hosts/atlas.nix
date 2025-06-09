@@ -29,15 +29,6 @@ nixpkgs.config.allowUnfree = true;
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 
-  services.fprintd.enable = true;
-
-  security.pam.services = {
-    login.fprintAuth = true;
-    sudo.fprintAuth = true;
-  };
-
-
-
 environment.shellAliases = {
 update = "sudo nixos-rebuild switch --flake /etc/nixos#supermacy";
 rebuild-boot = "sudo nixos-rebuild boot";
