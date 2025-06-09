@@ -28,12 +28,22 @@ nixpkgs.config.allowUnfree = true;
 
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-services.fprintd = {
-enable = true;
-tod.enable = true;
-tod.driver = pkgs.libfprint-2-tod1-vfs0090;
-};
 
+  services.fprintd = {
+    enable = true;
+  };
+
+  # Для python-validity и libfprint-tod-vfs0090
+  services.python-validity.enable = true;
+
+  # Если нужен драйвер TOD (например, для других сенсоров)
+  hardware.fingerprint.tod = {
+    enable = true;
+    driver = pkgs.libfprint-tod-vfs0090;
+  };
+
+security.pam.services.login.fprintAuth = true;
+security.pam.services.sudo.fprintAuth = true;
 
 environment.shellAliases = {
 update = "sudo nixos-rebuild switch --flake /etc/nixos#supermacy";
