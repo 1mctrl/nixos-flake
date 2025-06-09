@@ -24,7 +24,6 @@
           modules = [
 		./hosts/atlas.nix
 		./modules/bspwm.nix
-		./modules/fan.nix
 		./modules/audio.nix
 		./modules/networking.nix
 		./users/atlas.nix

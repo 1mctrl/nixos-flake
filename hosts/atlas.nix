@@ -49,6 +49,7 @@ memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
 	pkgs.xorg.setxkbmap
+	foliate
 	wget
 	fprintd
 	neovim
