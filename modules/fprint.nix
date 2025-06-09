@@ -12,7 +12,7 @@
 
     services.python-validity.enable = true;
 
-    services.open-fprintd.enable = true;
+    #services.open-fprintd.enable = true;
 
     security.pam = {
       services = {
