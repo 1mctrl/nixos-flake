@@ -28,6 +28,9 @@
 		./modules/audio.nix
 		./modules/networking.nix
 		./users/atlas.nix
+		./modules/fprint.nix
+
+
           ];
         };
       };

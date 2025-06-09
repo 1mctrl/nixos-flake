@@ -28,12 +28,7 @@ nixpkgs.config.allowUnfree = true;
 
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-#services.fprintd = {
-  #enable = true;
-  #tod.enable = true;
- # tod.driver = sensor.lib.libfprint-2-tod1-vfs0090; # В Flake он поставляет подходящий драйвер
-#};
-
+services.fingerprint.enable = true;
 
 
 environment.shellAliases = {
