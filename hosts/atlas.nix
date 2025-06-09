@@ -28,6 +28,13 @@ nixpkgs.config.allowUnfree = true;
 
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+#services.fprintd = {
+  #enable = true;
+  #tod.enable = true;
+ # tod.driver = sensor.lib.libfprint-2-tod1-vfs0090; # В Flake он поставляет подходящий драйвер
+#};
+
+
 
 environment.shellAliases = {
 update = "sudo nixos-rebuild switch --flake /etc/nixos#supermacy";
@@ -48,6 +55,7 @@ enable = true;
 memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
+	usbutils
 	pkgs.xorg.setxkbmap
 	koreader
 	wget

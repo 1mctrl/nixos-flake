@@ -22,6 +22,7 @@
         nixosConfigurations.supermacy = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
+		./modules/fprint.nix
 		./hosts/atlas.nix
 		./modules/bspwm.nix
 		./modules/audio.nix
