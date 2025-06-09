@@ -13,6 +13,7 @@
           pkgs = import nixpkgs {
             inherit system;
             config.allowUnfree = true;
+
           };
         in {
           packages.default = pkgs.hello;
@@ -28,10 +29,11 @@
 		./modules/audio.nix
 		./modules/networking.nix
 		./users/atlas.nix
-		./modules/fprint.nix
+
 
 
           ];
+
         };
       };
 }

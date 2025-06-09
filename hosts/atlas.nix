@@ -28,7 +28,11 @@ nixpkgs.config.allowUnfree = true;
 
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-services.fingerprint.enable = true;
+services.fprintd = {
+enable = true;
+tod.enable = true;
+tod.driver = pkgs.libfprint-2-tod1-vfs0090;
+};
 
 
 environment.shellAliases = {
