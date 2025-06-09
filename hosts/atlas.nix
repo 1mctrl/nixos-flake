@@ -40,7 +40,7 @@ boot.loader.grub.enable = true;
 boot.loader.grub.efiSupport = false;
 boot.loader.grub.device = "/dev/nvme0n1"; 
 
-services.mysql.enable = true;
+services.mysql.enable = false;
 services.mysql.package = pkgs.mysql80;
 
 zramSwap = {
@@ -49,7 +49,7 @@ memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
 	pkgs.xorg.setxkbmap
-	foliate
+	koreader
 	wget
 	fprintd
 	neovim
