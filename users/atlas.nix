@@ -10,7 +10,7 @@ shell = pkgs.fish;
 packages = with pkgs; [ 
  	librewolf
  	bspwm
- 	 
+	docker 	 
 	spotify 
  	htop
  	telegram-desktop 
@@ -35,6 +35,11 @@ packages = with pkgs; [
  
  ];
 };
+services.docker = {
+ enable = true;
+ autoStart = true;
+};
+
 
 programs.fish.enable = true;
 }
