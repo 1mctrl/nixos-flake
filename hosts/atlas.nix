@@ -51,6 +51,7 @@ memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
 	docker
+	upower
 	usbutils
 	pkgs.xorg.setxkbmap
 	koreader
