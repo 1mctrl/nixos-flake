@@ -35,10 +35,9 @@ packages = with pkgs; [
  
  ];
 };
-services.docker = {
- enable = true;
- autoStart = true;
-};
+
+services.docker.enable = true;
+
 
 
 programs.fish.enable = true;
