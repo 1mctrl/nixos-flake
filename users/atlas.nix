@@ -36,7 +36,7 @@ packages = with pkgs; [
  ];
 };
 
-services.docker.enable = true;
+
 
 
 
