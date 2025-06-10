@@ -43,11 +43,14 @@ boot.loader.grub.device = "/dev/nvme0n1";
 services.mysql.enable = false;
 services.mysql.package = pkgs.mysql80;
 
+services.docker.enable = true;
+
 zramSwap = {
 enable = true;
 memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
+	docker
 	usbutils
 	pkgs.xorg.setxkbmap
 	koreader
