@@ -25,9 +25,9 @@ packages = with pkgs; [
  	dolphin
  	swww
 	xdg-desktop-portal
-
+	zip
  	clang 
- 	
+ 	unzip
  	brightnessctl
 	pavucontrol
  	networkmanagerapplet
