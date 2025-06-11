@@ -32,6 +32,7 @@ nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 environment.shellAliases = {
 update = "sudo nixos-rebuild switch --flake /etc/nixos#supermacy";
+fastfetch = "fastfetch --load-config ~/.config/fastfetch/config.json";
 rebuild-boot = "sudo nixos-rebuild boot";
 clean-garbage = "sudo nix-collect-garbage -d";
 clean-generations = "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations +3";
@@ -54,7 +55,6 @@ memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
 	docker
-	chafa
 	imagemagick
 	upower
 	usbutils
@@ -86,15 +86,12 @@ environment.systemPackages = with pkgs; [
 	cargo
 	dolphin
 	mariadb
-	shadowsocks-libev
 	gcc
-	dbeaver-bin
 	jdk17
 	cryptsetup
 	xdg-desktop-portal
 	networkmanager
 	clang
-	emacs
 	emacs-nox
 	networkmanager_dmenu
 	
