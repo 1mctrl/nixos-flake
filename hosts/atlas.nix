@@ -45,6 +45,8 @@ services.mysql.package = pkgs.mysql80;
 
 #services.docker.enable = true;
 
+services.upower.enable = true;
+
 zramSwap = {
 enable = true;
 memoryPercent = 50; };
@@ -61,7 +63,7 @@ environment.systemPackages = with pkgs; [
 	btop
 	pkgs.pulsemixer
 	pkgs.pamixer
-	kitty
+	foot
 	rofi
 	xorg.xev
 	bspwm
