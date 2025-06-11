@@ -29,6 +29,7 @@ nixpkgs.config.allowUnfree = true;
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 
+
 environment.shellAliases = {
 update = "sudo nixos-rebuild switch --flake /etc/nixos#supermacy";
 rebuild-boot = "sudo nixos-rebuild boot";
@@ -63,8 +64,7 @@ environment.systemPackages = with pkgs; [
 	btop
 	pkgs.pulsemixer
 	pkgs.pamixer
-	foot
-	rofi
+	kitty
 	xorg.xev
 	bspwm
 	sxhkd
