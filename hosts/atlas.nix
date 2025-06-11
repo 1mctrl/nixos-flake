@@ -54,6 +54,7 @@ memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
 	docker
+	chafa
 	imagemagick
 	upower
 	usbutils
