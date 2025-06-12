@@ -9,7 +9,7 @@
     ./programs/fish.nix
     ./programs/bspwm.nix
     ./programs/sxhkd.nix
-    
+    ./programs/xinit.nix    
   ];
 
   home.packages = with pkgs; [ feh  ];
