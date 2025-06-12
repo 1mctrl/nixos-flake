@@ -12,21 +12,18 @@ packages = with pkgs; [
  	bspwm
 	docker 	 
 	spotify 
- 	htop
+ 	
  	telegram-desktop 
 	libreoffice 
  	cmake
  	freecad
 	blender
-	nsxiv
  	mariadb
  	dbus
- 	cava
  	dolphin
- 	swww
-	xdg-desktop-portal
+
 	zip
- 	clang 
+
  	unzip
  	brightnessctl
 	pavucontrol

@@ -9,7 +9,7 @@
     ./programs/fish.nix
     ./programs/bspwm.nix
     ./programs/sxhkd.nix
-	./programs/mako.nix    
+    
   ];
 
   home.packages = with pkgs; [ feh  ];

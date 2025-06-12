@@ -16,7 +16,7 @@
       xterm
       dmenu
       rofi
-      polybar
+      #polybar
       picom
     ];
 

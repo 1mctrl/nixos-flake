@@ -66,7 +66,6 @@ environment.systemPackages = with pkgs; [
 	polybar
 	picom
 	feh
-	dunst
 	librewolf
 	bibata-cursors
 	git
@@ -79,7 +78,6 @@ environment.systemPackages = with pkgs; [
 	gcc
 	jdk17
 	cryptsetup
-	xdg-desktop-portal
 	networkmanager
 	clang
 	emacs-nox
