@@ -10,7 +10,9 @@
     ./programs/bspwm.nix
     ./programs/sxhkd.nix
     ./programs/xinit.nix    
-  ];
+    #./programs/picom.nix 
+
+ ];
 
   home.packages = with pkgs; [ feh  sxhkd  kitty ];
 }
