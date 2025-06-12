@@ -2,11 +2,18 @@
   description = "NixOS Supermacy System";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+   # nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    #flake-utils.url = "github:numtide/flake-utils";
+   # home-manager.url = "github:nix-community/home-manager";
+    #home-manager.inputs.nixpkgs.follows = "nixpkgs";
+ nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+
     flake-utils.url = "github:numtide/flake-utils";
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
-  };
+
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs"; 
+ };
 
   outputs = { self, nixpkgs, flake-utils, home-manager, ... }:
     let

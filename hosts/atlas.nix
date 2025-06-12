@@ -68,15 +68,13 @@ environment.systemPackages = with pkgs; [
 	feh
 	dunst
 	librewolf
-	proxychains
 	bibata-cursors
-	(nerdfonts.override {fonts = [ "FiraCode"];})
 	git
 	fastfetch
 	tree
 	rustc
 	cargo
-	dolphin
+	
 	mariadb
 	gcc
 	jdk17
