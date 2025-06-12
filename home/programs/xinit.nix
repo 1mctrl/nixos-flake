@@ -1,3 +1,6 @@
+{ config, pkgs, ...}:
+
+
 {
   home.file.".xinitrc" = {
     text = ''
