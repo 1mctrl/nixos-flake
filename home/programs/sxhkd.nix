@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  xdg.configFile."sxhkd/sxhkdrc" = {
+  xdg.configFile.".config/sxhkd/sxhkdrc" = {
     text = ''
       super + Return
           kitty

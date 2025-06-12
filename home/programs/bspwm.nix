@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  xdg.configFile."bspwm/bspwmrc" = {
+  xdg.configFile.".config/bspwm/bspwmrc" = {
     text = ''
       #!/bin/sh
 
