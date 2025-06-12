@@ -3,7 +3,7 @@
 {
   home.username = "atlas";
   home.homeDirectory = "/home/atlas";
-  home.stateVersion = "24.05";
+  home.stateVersion = "24.11";
 
   imports = [
     ./programs/fish.nix
