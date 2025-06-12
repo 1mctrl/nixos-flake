@@ -3,7 +3,7 @@
 {
   xdg.configFile."bspwm/bspwmrc" = {
     text = ''
-      #!/bin/sh
+#!/bin/sh
 
 picom --config ~/.config/picom/picom.conf &
 kitty &

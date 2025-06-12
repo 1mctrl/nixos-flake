@@ -12,5 +12,5 @@
     ./programs/xinit.nix    
   ];
 
-  home.packages = with pkgs; [ feh  ];
+  home.packages = with pkgs; [ feh  sxhkd  kitty ];
 }
