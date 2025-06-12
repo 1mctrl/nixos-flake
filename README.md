@@ -36,7 +36,7 @@ Replace `hostname` with the name of your machine defined in `hosts/`.
 * ⚡ **Minimalist setup**
 * 🖥 **Window Manager / DE:** bspwm 
 * 🐚 **Shell:** fish
-* 🎨 **Ьodular config**
+* 🎨 **Modular config**
 * 🔧 **Fully reproducible system**
 
 
