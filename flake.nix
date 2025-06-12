@@ -14,7 +14,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs"; 
  };
-
+};
   outputs = { self, nixpkgs, flake-utils, home-manager, ... }:
     let
       system = "x86_64-linux";
