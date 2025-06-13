@@ -13,6 +13,7 @@
 ├── modules/         # Custom NixOS modules
 └── README.md        # This file
 ````
+![image](https://github.com/user-attachments/assets/d9ed950d-e137-4a74-aa92-29ef56a2adc8)
 
 ## 🚀 Usage
 
