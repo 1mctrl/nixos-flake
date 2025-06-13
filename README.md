@@ -39,4 +39,7 @@ Replace `hostname` with the name of your machine defined in `hosts/`.
 * 🎨 **Modular config**
 * 🔧 **Fully reproducible system**
 
+* ![image](https://github.com/user-attachments/assets/994de393-41cf-4814-b819-198db4c05e34)
+
+
 
