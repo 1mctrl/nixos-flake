@@ -1,7 +1,7 @@
 
 # nixos-flake
 
-**My personal NixOS configuration** powered by flakes. Minimal, modular, and fully declarative.
+**My personal NixOS configuration** powered by flakes. Minimal, modular.
 
 ## 📂 Structure
 
