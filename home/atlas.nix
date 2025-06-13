@@ -11,6 +11,7 @@
     ./programs/sxhkd.nix
     ./programs/xinit.nix    
     #./programs/picom.nix 
+    ./programs/fetch.nix
 
  ];
 
